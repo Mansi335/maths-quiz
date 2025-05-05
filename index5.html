@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    
+</head>
+
+<body>
+ 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary px-3">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.htm">DEVMAN</a>
+            <span class="navbar-text mx-3 fw-semibold"></span>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 d-flex align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutUs.htm"> ABOUT US </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="que_1.html"> ROUND 1 </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="indexN.html"> ROUND 2 </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="round_3.html"> ROUND 3 </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="head">
+        <h1>ROUND 1</h1>
+    </div>
+    <section id="q1">
+        <div class="sc">
+            <p>SCORE: <span id="countDisplay">0</span></p>
+        </div>
+        <div class="que">
+            <div class="q1">QUESTION 3</div>
+            <div class="qu">Who was known as the first true Mathematician?
+               </div>
+        </div>
+        <div class="ans">
+            <button onclick="hangecolor(this) ; incrementCount(); text();" id="one">1: Pythagorus </button>
+            <button onclick="change(); text();" id="two">2: Archimedes</button>
+            <button onclick="hange(); text();" id="three">3: Euclid</button>
+            <button onclick="ange(); text();" id="four">4: David Hilbert</button>
+        </div>
+    </section>
+    <div class="ex" id="ex">
+        <p></p>
+    </div>
+    <section class="but">
+        <button id="btn" onclick="saveScore()"><a href="indexN.html">Next Round</a></button>
+        <br>
+
+    </section>
+    <script src="script2.js"></script>
+    <script>function change() {
+            document.getElementById("two").style.backgroundColor = "red";
+            document.getElementById("one").style.backgroundColor = "green";
+        }
+        function hange() {
+            document.getElementById("three").style.backgroundColor = "red";
+            document.getElementById("one").style.backgroundColor = "green";
+        }
+        function ange() {
+            document.getElementById("four").style.backgroundColor = "red";
+            document.getElementById("one").style.backgroundColor = "green";
+        }
+    function text() {
+        document.getElementById("ex").innerHTML = "EXPLAINATION:-Pythagoras of Samos (c. 570 BCE – c. 495 BCE) was an ancient Greek mathematician and philosopher best known for the Pythagorean Theorem, which states that in a right-angled triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides (a² + b² = c²). He founded a religious and mathematical school called the Pythagorean Brotherhood, which believed that numbers were the key to understanding the universe."
+    }
+        function hangecolor(event) {
+            var color = "green";
+            event.style.backgroundColor = color;
+        }</script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url('pics/top-view-geometric-forms-with-copy-space_23-2148830232.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* .nav{
+    border: 2px solid black;
+    padding: 44px;
+    background-color: rgb(214, 208, 208);
+    display: flex;
+        justify-content: space-around;
+border-radius: 8px;
+}
+.nav h1{
+
+    font-size: 44px;
+} */
+.logo{
+    border: 2px solid black;
+  width: 195px;
+border-radius: 8px;
+    text-align: center;
+    font-size: 44px; 
+}
+.head{
+    margin: 22px;
+    text-align: center;
+    font-size: 23px;
+}
+#q1{
+    display: flex;
+}
+.que{
+    border: 2px solid;
+    width: 450px;
+    padding: 22px;
+    margin: 42px;
+    font-size: 32px;
+    background-color: rgb(214, 208, 208);
+    border-radius: 8px;
+}
+.que h1{
+    text-align: center;
+    padding: 12px;
+}
+.que h3{
+    padding: 22px;
+}
+.ans{
+    display: flex;
+    flex-direction:column;
+    padding: 44px;
+}
+.ans button{
+   border-radius: 8px;
+    padding: 22px;
+    margin: 22px;
+    width: 433px;
+  transition: .3s;
+  text-align: start;
+    
+}
+.ans button:hover{
+    background-color: rgb(216, 214, 214);
+}
+.head h1{
+    display: flex;
+    justify-content: center;
+}
+.but button{
+ margin: 42px;
+ font-size: 44px;
+border-radius: 8px;
+color: rgb(4, 4, 4);
+text-decoration: none;
+ padding: 22px;
+}
+.but button a{
+color: rgb(4, 4, 4);
+    text-decoration: none;
+}
+.sc{
+    border: 2px solid black;
+    border-radius:8px ;
+    width: 125px;
+    height: 110px;
+    padding: 14px;
+    font-size: 32px;
+    margin-left: 12px;
+}
+.ex{
+font-size: 23px;
+
+
+}
+/* Navbar Styling */
+.navbar {
+    background-color: #aaaaaa !important;
+    border-radius: 20px;
+    /* Added missing 'px' */
+    padding: 10px 20px;
+}
+
+/* Navbar Links */
+.nav-link_active,
+.nav-link {
+    text-decoration: none;
+    color: black !important;
+    font-weight: 500;
+    text-align: right;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link_active:hover,.nav-link:hover {
+    color: #555 !important;
+}
